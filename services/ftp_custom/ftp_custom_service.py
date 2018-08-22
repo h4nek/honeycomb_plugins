@@ -16,7 +16,9 @@ from .alerts_description import CLIENT_CONNECTED_DESCRIPTION, \
     CLIENT_DISCONNECTED_DESCRIPTION, USER_LOGIN_DESCRIPTION, USER_FAILED_LOGIN_DESCRIPTION, \
     USER_LOGOUT_DESCRIPTION, USER_UPLOADED_FILE_DESCRIPTION, USER_DOWNLOADED_FILE_DESCRIPTION, \
     USER_DELETED_FILE_DESCRIPTION, USER_LISTED_DIR_DESCRIPTION, USER_NAVIGATED_DIR_DESCRIPTION, \
-    USER_CREATED_DIR_DESCRIPTION, USER_DELETED_DIR_DESCRIPTION
+    USER_CREATED_DIR_DESCRIPTION, USER_DELETED_DIR_DESCRIPTION, USER_VIEWED_SYSTEM_DESCRIPTION, \
+    USER_RETRIEVED_FILE_DESCRIPTION, USER_RENAMED_FILE_FROM_DESCRIPTION, \
+    USER_RENAMED_FILE_TO_DESCRIPTION
 
 
 FTP_ALERT_TYPE = "ftp"
@@ -119,7 +121,6 @@ class AlertingHandler(FTPHandler):
     def ftp_MLST(self, path):
         """Handle MLST."""
         print("MLST method")
-        dirpath = tempfile.mkdtemp(dir=path) #TEST
         self.__send_alert(USER_LISTED_DIR_DESCRIPTION, {
             ADDITIONAL_FIELDS: self.__format_file_path(path)
         })
@@ -127,6 +128,7 @@ class AlertingHandler(FTPHandler):
 
     def ftp_CWD(self, path):
         """Handle CWD."""
+        print("CWD method")
         self.__send_alert(USER_NAVIGATED_DIR_DESCRIPTION, {
             ADDITIONAL_FIELDS: self.__format_file_path(path)
         })
@@ -152,6 +154,34 @@ class AlertingHandler(FTPHandler):
             ADDITIONAL_FIELDS: self.__format_file_path(path)
         })
         FTPHandler.ftp_DELE(self, path)
+        
+    #Extra handlers
+    def ftp_SYST(self, path):
+        """Handle SYST."""
+        print("SYST method")
+        self.__send_alert(USER_VIEWED_SYSTEM_DESCRIPTION)
+        FTPHandler.ftp_SYST(self, path)
+    
+    def ftp_RETR(self, path):
+        """Handle RETR."""
+        self.__send_alert(USER_RETRIEVED_FILE_DESCRIPTION, {
+            ADDITIONAL_FIELDS: self.__format_file_path(path)
+        })
+        FTPHandler.ftp_RETR(self, path)
+        
+    def ftp_RNFR(self, path):
+        """Handle RNFR."""
+        self.__send_alert(USER_RENAMED_FILE_FROM_DESCRIPTION, {
+            ADDITIONAL_FIELDS: self.__format_file_path(path)
+        })
+        FTPHandler.ftp_RNFR(self, path)
+    
+    def ftp_RNTO(self, path):
+        """Handle RNTO."""
+        self.__send_alert(USER_RENAMED_FILE_TO_DESCRIPTION, {
+            ADDITIONAL_FIELDS: self.__format_file_path(path)
+        })
+        FTPHandler.ftp_RNTO(self, path)
 
 
 class FTPAlertingServer(FTPServer):
