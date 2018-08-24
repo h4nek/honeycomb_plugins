@@ -22,3 +22,5 @@ USER_VIEWED_SYSTEM_DESCRIPTION = "User viewed system type information"
 USER_RETRIEVED_FILE_DESCRIPTION = "User retrieved a copy of the file"
 USER_RENAMED_FILE_FROM_DESCRIPTION = "User renamed a file from"
 USER_RENAMED_FILE_TO_DESCRIPTION = "User renamed a file to"
+
+USER_CHANGED_TYPE_TO_DESCRIPTION = "User changed mode to transfer files to (ASCII, binary)"

@@ -18,7 +18,7 @@ from .alerts_description import CLIENT_CONNECTED_DESCRIPTION, \
     USER_DELETED_FILE_DESCRIPTION, USER_LISTED_DIR_DESCRIPTION, USER_NAVIGATED_DIR_DESCRIPTION, \
     USER_CREATED_DIR_DESCRIPTION, USER_DELETED_DIR_DESCRIPTION, USER_VIEWED_SYSTEM_DESCRIPTION, \
     USER_RETRIEVED_FILE_DESCRIPTION, USER_RENAMED_FILE_FROM_DESCRIPTION, \
-    USER_RENAMED_FILE_TO_DESCRIPTION
+    USER_RENAMED_FILE_TO_DESCRIPTION, USER_CHANGED_TYPE_TO_DESCRIPTION
 
 
 FTP_ALERT_TYPE = "ftp"
@@ -29,7 +29,7 @@ ORIGINATING_PORT = "originating_port"
 USERNAME = "username"
 PASSWORD = "password"
 ADDITIONAL_FIELDS = "additional_fields"
-SERVER_BIND_IP = "0.0.0.0"
+SERVER_BIND_IP = "0.0.0.0" # default: 0.0.0.0 | alter: 192.168.1.100
 SERVER_TEST_IP = "127.0.0.1"
 SERVER_PORT = 21
 DEFAULT_USER = "admin"
@@ -103,7 +103,7 @@ class AlertingHandler(FTPHandler):
         """Handle LIST."""
         if not os.listdir(path):
             for i in range(10):
-                dirpath = tempfile.mkdtemp(dir=path) #TEST
+                dirpath = tempfile.mkdtemp(dir=path) #TODO: Linux directory simulator; do not trigger in user-made directories
                 print("New dir path: " + dirpath)
         self.__send_alert(USER_LISTED_DIR_DESCRIPTION, {
             ADDITIONAL_FIELDS: self.__format_file_path(path)
@@ -182,6 +182,17 @@ class AlertingHandler(FTPHandler):
             ADDITIONAL_FIELDS: self.__format_file_path(path)
         })
         FTPHandler.ftp_RNTO(self, path)
+    def ftp_TYPE(self, path):
+        """Handle TYPE."""
+        if path == "A":
+            self.__send_alert(USER_CHANGED_TYPE_TO_DESCRIPTION, {
+                ADDITIONAL_FIELDS: self.__format_file_path("ascii")
+            })
+        elif path == "I":
+            self.__send_alert(USER_CHANGED_TYPE_TO_DESCRIPTION, {
+                ADDITIONAL_FIELDS: self.__format_file_path("binary")
+            })
+        FTPHandler.ftp_TYPE(self, path)
 
 
 class FTPAlertingServer(FTPServer):
