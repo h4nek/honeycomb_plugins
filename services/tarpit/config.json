@@ -1,0 +1,41 @@
+{
+    "event_types": [
+        {
+            "name": "tarpit",
+            "label": "Default Tarpit",
+            "fields": ["originating_ip", "originating_port", "request"],
+            "policy": "Alert"
+        }
+    ],
+    "service": {
+        "allow_many": false,
+        "supported_os_families": "All",
+        "ports": [
+        ],
+        "name": "tarpit",
+        "label": "Simple Tarpit Service",
+        "description": "Simple Tarpit Service that let's the attacker to send anything and listens to it",
+        "conflicts_with": []
+    },
+    "parameters": [
+      {
+          "type": "text",
+          "value": "ip",
+          "label": "Listening Interface",
+          "required": true
+      },
+      {
+          "type": "integer",
+          "value": "port",
+          "label": "Listening Port",
+          "required": true
+      },
+      {
+          "type": "boolean",
+          "value": "threading",
+          "label": "Enable threading support",
+          "required": true,
+          "default": false
+      }
+    ]
+}

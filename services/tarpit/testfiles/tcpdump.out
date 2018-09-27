@@ -1,0 +1,207 @@
+tcpdump: listening on enp2s0, link-type EN10MB (Ethernet), capture size 262144 bytes
+19:22:14.963383 IP (tos 0x10, ttl 64, id 31806, offset 0, flags [DF], proto TCP (6), length 60)
+    192.168.1.219.58094 > 192.168.1.100.22: Flags [S], cksum 0x9518 (correct), seq 2562693342, win 29200, options [mss 1460,sackOK,TS val 1039559086 ecr 0,nop,wscale 7], length 0
+19:22:14.963590 IP (tos 0x10, ttl 64, id 31807, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.58094 > 192.168.1.100.22: Flags [.], cksum 0x77ec (correct), seq 2562693343, ack 1487067679, win 229, options [nop,nop,TS val 1039559087 ecr 2738677523], length 0
+19:22:15.907965 IP (tos 0x10, ttl 64, id 31808, offset 0, flags [DF], proto TCP (6), length 56)
+    192.168.1.219.58094 > 192.168.1.100.22: Flags [P.], cksum 0xfebc (correct), seq 0:4, ack 1, win 229, options [nop,nop,TS val 1039560031 ecr 2738677523], length 4
+19:22:18.065219 IP (tos 0x10, ttl 64, id 31809, offset 0, flags [DF], proto TCP (6), length 63)
+    192.168.1.219.58094 > 192.168.1.100.22: Flags [P.], cksum 0xa158 (correct), seq 4:15, ack 1, win 229, options [nop,nop,TS val 1039562188 ecr 2738678468], length 11
+19:22:18.237459 IP (tos 0x10, ttl 64, id 31810, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.219.58094 > 192.168.1.100.22: Flags [P.], cksum 0x51e2 (correct), seq 15:17, ack 1, win 229, options [nop,nop,TS val 1039562360 ecr 2738680625], length 2
+19:22:18.404346 IP (tos 0x10, ttl 64, id 31811, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.219.58094 > 192.168.1.100.22: Flags [P.], cksum 0x508d (correct), seq 17:19, ack 1, win 229, options [nop,nop,TS val 1039562527 ecr 2738680797], length 2
+19:22:18.581637 IP (tos 0x10, ttl 64, id 31812, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.219.58094 > 192.168.1.100.22: Flags [P.], cksum 0x4f32 (correct), seq 19:21, ack 1, win 229, options [nop,nop,TS val 1039562705 ecr 2738680964], length 2
+19:22:18.769444 IP (tos 0x10, ttl 64, id 31813, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.219.58094 > 192.168.1.100.22: Flags [P.], cksum 0x4dc4 (correct), seq 21:23, ack 1, win 229, options [nop,nop,TS val 1039562892 ecr 2738681141], length 2
+19:22:19.001248 IP (tos 0x10, ttl 64, id 31814, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.219.58094 > 192.168.1.100.22: Flags [P.], cksum 0x4c1e (correct), seq 23:25, ack 1, win 229, options [nop,nop,TS val 1039563124 ecr 2738681329], length 2
+19:22:20.537021 IP (tos 0x10, ttl 64, id 31815, offset 0, flags [DF], proto TCP (6), length 60)
+    192.168.1.219.58094 > 192.168.1.100.22: Flags [P.], cksum 0x0cef (correct), seq 25:33, ack 1, win 229, options [nop,nop,TS val 1039564660 ecr 2738681561], length 8
+19:22:23.035105 IP (tos 0x0, ttl 64, id 21633, offset 0, flags [DF], proto TCP (6), length 60)
+    192.168.1.1.49412 > 192.168.1.100.22: Flags [S], cksum 0x5c3e (correct), seq 3373588408, win 29200, options [mss 1460,sackOK,TS val 14322489 ecr 0,nop,wscale 7], length 0
+19:22:23.035296 IP (tos 0x0, ttl 64, id 21634, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.1.49412 > 192.168.1.100.22: Flags [.], cksum 0xa723 (correct), seq 3373588409, ack 568028631, win 229, options [nop,nop,TS val 14322489 ecr 3336306291], length 0
+19:22:25.229710 IP (tos 0x0, ttl 64, id 21635, offset 0, flags [DF], proto TCP (6), length 65)
+    192.168.1.1.49412 > 192.168.1.100.22: Flags [P.], cksum 0x1c4e (correct), seq 0:13, ack 1, win 229, options [nop,nop,TS val 14322709 ecr 3336306291], length 13
+19:22:27.994190 IP (tos 0x10, ttl 64, id 31816, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.58094 > 192.168.1.100.22: Flags [F.], cksum 0x2f1e (correct), seq 33, ack 1, win 229, options [nop,nop,TS val 1039572117 ecr 2738683097], length 0
+19:22:27.994379 IP (tos 0x10, ttl 64, id 31817, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.58094 > 192.168.1.100.22: Flags [.], cksum 0x11fc (correct), seq 34, ack 2, win 229, options [nop,nop,TS val 1039572117 ecr 2738690554], length 0
+19:22:29.652907 IP (tos 0x0, ttl 64, id 21636, offset 0, flags [DF], proto TCP (6), length 56)
+    192.168.1.1.49412 > 192.168.1.100.22: Flags [P.], cksum 0x2d64 (correct), seq 13:17, ack 1, win 229, options [nop,nop,TS val 14323151 ecr 3336308485], length 4
+19:22:30.610286 IP (tos 0x0, ttl 64, id 21637, offset 0, flags [DF], proto TCP (6), length 58)
+    192.168.1.1.49412 > 192.168.1.100.22: Flags [P.], cksum 0xaf52 (correct), seq 17:23, ack 1, win 229, options [nop,nop,TS val 14323247 ecr 3336312908], length 6
+19:22:32.295047 IP (tos 0x0, ttl 64, id 21638, offset 0, flags [DF], proto TCP (6), length 59)
+    192.168.1.1.49412 > 192.168.1.100.22: Flags [P.], cksum 0x3bf6 (correct), seq 23:30, ack 1, win 229, options [nop,nop,TS val 14323415 ecr 3336313866], length 7
+19:22:33.477644 IP (tos 0x0, ttl 64, id 21639, offset 0, flags [DF], proto TCP (6), length 57)
+    192.168.1.1.49412 > 192.168.1.100.22: Flags [P.], cksum 0x9d40 (correct), seq 30:35, ack 1, win 229, options [nop,nop,TS val 14323534 ecr 3336315551], length 5
+19:22:36.738835 IP (tos 0x0, ttl 64, id 21640, offset 0, flags [DF], proto TCP (6), length 63)
+    192.168.1.1.49412 > 192.168.1.100.22: Flags [P.], cksum 0x6814 (correct), seq 35:46, ack 1, win 229, options [nop,nop,TS val 14323860 ecr 3336316733], length 11
+19:22:38.639737 IP (tos 0x0, ttl 64, id 21641, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.1.49412 > 192.168.1.100.22: Flags [F.], cksum 0x6b54 (correct), seq 46, ack 1, win 229, options [nop,nop,TS val 14324050 ecr 3336319994], length 0
+19:22:38.639942 IP (tos 0x0, ttl 64, id 21642, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.1.49412 > 192.168.1.100.22: Flags [.], cksum 0x63e6 (correct), seq 47, ack 2, win 229, options [nop,nop,TS val 14324050 ecr 3336321895], length 0
+
+22 packets captured
+22 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp2s0, link-type EN10MB (Ethernet), capture size 262144 bytes
+19:26:50.272257 IP (tos 0x10, ttl 64, id 10098, offset 0, flags [DF], proto TCP (6), length 60)
+    192.168.1.219.58178 > 192.168.1.100.22: Flags [S], cksum 0x5abe (correct), seq 1634129609, win 29200, options [mss 1460,sackOK,TS val 1039834398 ecr 0,nop,wscale 7], length 0
+19:26:50.272409 IP (tos 0x10, ttl 64, id 10099, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.58178 > 192.168.1.100.22: Flags [.], cksum 0x30c2 (correct), seq 1634129610, ack 317061438, win 229, options [nop,nop,TS val 1039834398 ecr 2738952830], length 0
+19:26:51.570643 IP (tos 0x10, ttl 64, id 10100, offset 0, flags [DF], proto TCP (6), length 56)
+    192.168.1.219.58178 > 192.168.1.100.22: Flags [P.], cksum 0xb630 (correct), seq 0:4, ack 1, win 229, options [nop,nop,TS val 1039835696 ecr 2738952830], length 4
+19:26:53.580151 IP (tos 0x10, ttl 64, id 10101, offset 0, flags [DF], proto TCP (6), length 59)
+    192.168.1.219.58178 > 192.168.1.100.22: Flags [P.], cksum 0xceba (correct), seq 4:11, ack 1, win 229, options [nop,nop,TS val 1039837706 ecr 2738954128], length 7
+19:26:56.087099 IP (tos 0x10, ttl 64, id 10102, offset 0, flags [DF], proto TCP (6), length 62)
+    192.168.1.219.58178 > 192.168.1.100.22: Flags [P.], cksum 0xa161 (correct), seq 11:21, ack 1, win 229, options [nop,nop,TS val 1039840213 ecr 2738956138], length 10
+19:26:57.798339 IP (tos 0x10, ttl 64, id 10103, offset 0, flags [DF], proto TCP (6), length 59)
+    192.168.1.219.58178 > 192.168.1.100.22: Flags [P.], cksum 0xb180 (correct), seq 21:28, ack 1, win 229, options [nop,nop,TS val 1039841924 ecr 2738958645], length 7
+19:26:59.372737 IP (tos 0x0, ttl 64, id 64034, offset 0, flags [DF], proto TCP (6), length 60)
+    192.168.1.1.49416 > 192.168.1.100.22: Flags [S], cksum 0xcc35 (correct), seq 3218476297, win 29200, options [mss 1460,sackOK,TS val 14350123 ecr 0,nop,wscale 7], length 0
+19:26:59.372934 IP (tos 0x0, ttl 64, id 64035, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.1.49416 > 192.168.1.100.22: Flags [.], cksum 0x1c58 (correct), seq 3218476298, ack 2282736370, win 229, options [nop,nop,TS val 14350123 ecr 3336582626], length 0
+19:27:02.809958 IP (tos 0x0, ttl 64, id 64036, offset 0, flags [DF], proto TCP (6), length 59)
+    192.168.1.1.49416 > 192.168.1.100.22: Flags [P.], cksum 0x490e (correct), seq 0:7, ack 1, win 229, options [nop,nop,TS val 14350467 ecr 3336582626], length 7
+19:27:03.187569 IP (tos 0x0, ttl 64, id 64037, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.1.49416 > 192.168.1.100.22: Flags [P.], cksum 0x0052 (correct), seq 7:9, ack 1, win 229, options [nop,nop,TS val 14350505 ecr 3336586063], length 2
+19:27:03.384074 IP (tos 0x0, ttl 64, id 64038, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.1.49416 > 192.168.1.100.22: Flags [P.], cksum 0xfec2 (correct), seq 9:11, ack 1, win 229, options [nop,nop,TS val 14350524 ecr 3336586441], length 2
+19:27:03.556392 IP (tos 0x0, ttl 64, id 64039, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.1.49416 > 192.168.1.100.22: Flags [P.], cksum 0xfdea (correct), seq 11:13, ack 1, win 229, options [nop,nop,TS val 14350542 ecr 3336586637], length 2
+19:27:04.994714 IP (tos 0x0, ttl 64, id 64040, offset 0, flags [DF], proto TCP (6), length 59)
+    192.168.1.1.49416 > 192.168.1.100.22: Flags [P.], cksum 0xacc4 (correct), seq 13:20, ack 1, win 229, options [nop,nop,TS val 14350685 ecr 3336586810], length 7
+19:27:07.241360 IP (tos 0x0, ttl 64, id 64041, offset 0, flags [DF], proto TCP (6), length 57)
+    192.168.1.1.49416 > 192.168.1.100.22: Flags [P.], cksum 0x21b7 (correct), seq 20:25, ack 1, win 229, options [nop,nop,TS val 14350910 ecr 3336588248], length 5
+19:27:07.939872 IP (tos 0x0, ttl 64, id 64042, offset 0, flags [DF], proto TCP (6), length 56)
+    192.168.1.1.49416 > 192.168.1.100.22: Flags [P.], cksum 0x839f (correct), seq 25:29, ack 1, win 229, options [nop,nop,TS val 14350980 ecr 3336590495], length 4
+19:27:09.416901 IP (tos 0x0, ttl 64, id 64043, offset 0, flags [DF], proto TCP (6), length 60)
+    192.168.1.1.49416 > 192.168.1.100.22: Flags [P.], cksum 0xa078 (correct), seq 29:37, ack 1, win 229, options [nop,nop,TS val 14351128 ecr 3336591193], length 8
+19:27:10.540759 IP (tos 0x0, ttl 64, id 64044, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.1.49416 > 192.168.1.100.22: Flags [F.], cksum 0xf098 (correct), seq 37, ack 1, win 229, options [nop,nop,TS val 14351240 ecr 3336592670], length 0
+19:27:12.642753 IP (tos 0x10, ttl 64, id 10104, offset 0, flags [DF], proto TCP (6), length 53)
+    192.168.1.219.58178 > 192.168.1.100.22: Flags [P.], cksum 0xb7d3 (correct), seq 28:29, ack 1, win 229, options [nop,nop,TS val 1039856769 ecr 2738960356], length 1
+19:27:13.013396 IP (tos 0x10, ttl 64, id 10105, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.219.58178 > 192.168.1.100.22: Flags [P.], cksum 0x7359 (correct), seq 29:31, ack 1, win 229, options [nop,nop,TS val 1039857139 ecr 2738975200], length 2
+19:27:14.400696 IP (tos 0x10, ttl 64, id 10106, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.58178 > 192.168.1.100.22: Flags [F.], cksum 0x798b (correct), seq 31, ack 1, win 229, options [nop,nop,TS val 1039858527 ecr 2738975571], length 0
+19:27:14.400940 IP (tos 0x10, ttl 64, id 10107, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.58178 > 192.168.1.100.22: Flags [.], cksum 0x741f (correct), seq 32, ack 2, win 229, options [nop,nop,TS val 1039858527 ecr 2738976958], length 0
+19:27:14.401235 IP (tos 0x0, ttl 64, id 38925, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.1.49416 > 192.168.1.100.22: Flags [.], cksum 0xdb9d (correct), seq 38, ack 2, win 229, options [nop,nop,TS val 14351626 ecr 3336597654], length 0
+
+22 packets captured
+22 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp2s0, link-type EN10MB (Ethernet), capture size 262144 bytes
+
+0 packets captured
+0 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp2s0, link-type EN10MB (Ethernet), capture size 262144 bytes
+
+0 packets captured
+0 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp2s0, link-type EN10MB (Ethernet), capture size 262144 bytes
+
+0 packets captured
+0 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp2s0, link-type EN10MB (Ethernet), capture size 262144 bytes
+19:30:56.174937 IP (tos 0x10, ttl 64, id 25332, offset 0, flags [DF], proto TCP (6), length 60)
+    192.168.1.219.58182 > 192.168.1.100.22: Flags [S], cksum 0x553e (correct), seq 4192961323, win 29200, options [mss 1460,sackOK,TS val 1040080303 ecr 0,nop,wscale 7], length 0
+19:30:56.175252 IP (tos 0x10, ttl 64, id 25333, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.58182 > 192.168.1.100.22: Flags [.], cksum 0x090b (correct), seq 4192961324, ack 4188369956, win 229, options [nop,nop,TS val 1040080303 ecr 2739198731], length 0
+19:30:57.291373 IP (tos 0x10, ttl 64, id 25334, offset 0, flags [DF], proto TCP (6), length 56)
+    192.168.1.219.58182 > 192.168.1.100.22: Flags [P.], cksum 0x8f2f (correct), seq 0:4, ack 1, win 229, options [nop,nop,TS val 1040081419 ecr 2739198731], length 4
+19:30:58.914753 IP (tos 0x10, ttl 64, id 25335, offset 0, flags [DF], proto TCP (6), length 59)
+    192.168.1.219.58182 > 192.168.1.100.22: Flags [P.], cksum 0xbd00 (correct), seq 4:11, ack 1, win 229, options [nop,nop,TS val 1040083043 ecr 2739199847], length 7
+19:30:59.242067 IP (tos 0x10, ttl 64, id 25336, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.219.58182 > 192.168.1.100.22: Flags [P.], cksum 0xe53d (correct), seq 11:13, ack 1, win 229, options [nop,nop,TS val 1040083370 ecr 2739201470], length 2
+19:30:59.414935 IP (tos 0x10, ttl 64, id 25337, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.219.58182 > 192.168.1.100.22: Flags [P.], cksum 0xe346 (correct), seq 13:15, ack 1, win 229, options [nop,nop,TS val 1040083543 ecr 2739201798], length 2
+19:31:02.062739 IP (tos 0x10, ttl 64, id 25338, offset 0, flags [DF], proto TCP (6), length 57)
+    192.168.1.219.58182 > 192.168.1.100.22: Flags [P.], cksum 0x7ede (correct), seq 15:20, ack 1, win 229, options [nop,nop,TS val 1040086191 ecr 2739201971], length 5
+19:31:02.430708 IP (tos 0x10, ttl 64, id 25339, offset 0, flags [DF], proto TCP (6), length 57)
+    192.168.1.219.58182 > 192.168.1.100.22: Flags [P.], cksum 0xd387 (correct), seq 20:25, ack 1, win 229, options [nop,nop,TS val 1040086559 ecr 2739204618], length 5
+19:31:02.697585 IP (tos 0x10, ttl 64, id 25340, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.219.58182 > 192.168.1.100.22: Flags [P.], cksum 0xc9f3 (correct), seq 25:27, ack 1, win 229, options [nop,nop,TS val 1040086826 ecr 2739204986], length 2
+19:31:03.748512 IP (tos 0x10, ttl 64, id 25341, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.58182 > 192.168.1.100.22: Flags [F.], cksum 0xd1de (correct), seq 27, ack 1, win 229, options [nop,nop,TS val 1040087877 ecr 2739205253], length 0
+19:31:03.748926 IP (tos 0x10, ttl 64, id 25342, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.58182 > 192.168.1.100.22: Flags [.], cksum 0xcdc2 (correct), seq 28, ack 2, win 229, options [nop,nop,TS val 1040087877 ecr 2739206304], length 0
+19:31:04.602251 IP (tos 0x10, ttl 64, id 38844, offset 0, flags [DF], proto TCP (6), length 60)
+    192.168.1.219.58186 > 192.168.1.100.22: Flags [S], cksum 0x0f40 (correct), seq 612400550, win 29200, options [mss 1460,sackOK,TS val 1040088730 ecr 0,nop,wscale 7], length 0
+19:31:04.602455 IP (tos 0x10, ttl 64, id 38845, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.58186 > 192.168.1.100.22: Flags [.], cksum 0x7b80 (correct), seq 612400551, ack 942431294, win 229, options [nop,nop,TS val 1040088731 ecr 2739207158], length 0
+19:31:05.605888 IP (tos 0x10, ttl 64, id 38846, offset 0, flags [DF], proto TCP (6), length 59)
+    192.168.1.219.58186 > 192.168.1.100.22: Flags [P.], cksum 0x33a7 (correct), seq 0:7, ack 1, win 229, options [nop,nop,TS val 1040089734 ecr 2739207158], length 7
+19:31:05.973571 IP (tos 0x10, ttl 64, id 38847, offset 0, flags [DF], proto TCP (6), length 56)
+    192.168.1.219.58186 > 192.168.1.100.22: Flags [P.], cksum 0x00b7 (correct), seq 7:11, ack 1, win 229, options [nop,nop,TS val 1040090102 ecr 2739208161], length 4
+19:31:06.177517 IP (tos 0x10, ttl 64, id 38848, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.219.58186 > 192.168.1.100.22: Flags [P.], cksum 0x62df (correct), seq 11:13, ack 1, win 229, options [nop,nop,TS val 1040090306 ecr 2739208529], length 2
+19:31:08.091484 IP (tos 0x10, ttl 64, id 38849, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.58186 > 192.168.1.100.22: Flags [F.], cksum 0x67aa (correct), seq 13, ack 1, win 229, options [nop,nop,TS val 1040092220 ecr 2739208733], length 0
+19:31:08.091755 IP (tos 0x10, ttl 64, id 38850, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.58186 > 192.168.1.100.22: Flags [.], cksum 0x602f (correct), seq 14, ack 2, win 229, options [nop,nop,TS val 1040092220 ecr 2739210647], length 0
+19:31:09.292977 IP (tos 0x10, ttl 64, id 44477, offset 0, flags [DF], proto TCP (6), length 60)
+    192.168.1.219.58188 > 192.168.1.100.22: Flags [S], cksum 0x2a5f (correct), seq 832586514, win 29200, options [mss 1460,sackOK,TS val 1040093421 ecr 0,nop,wscale 7], length 0
+19:31:09.293192 IP (tos 0x10, ttl 64, id 44478, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.58188 > 192.168.1.100.22: Flags [.], cksum 0x594c (correct), seq 832586515, ack 2853836113, win 229, options [nop,nop,TS val 1040093421 ecr 2739211849], length 0
+19:31:12.752854 IP (tos 0x10, ttl 64, id 44479, offset 0, flags [DF], proto TCP (6), length 66)
+    192.168.1.219.58188 > 192.168.1.100.22: Flags [P.], cksum 0x4526 (correct), seq 0:14, ack 1, win 229, options [nop,nop,TS val 1040096881 ecr 2739211849], length 14
+19:31:13.734475 IP (tos 0x10, ttl 64, id 44480, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.58188 > 192.168.1.100.22: Flags [F.], cksum 0x3a60 (correct), seq 14, ack 1, win 229, options [nop,nop,TS val 1040097863 ecr 2739215308], length 0
+19:31:13.734666 IP (tos 0x10, ttl 64, id 44481, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.58188 > 192.168.1.100.22: Flags [.], cksum 0x3689 (correct), seq 15, ack 2, win 229, options [nop,nop,TS val 1040097863 ecr 2739216290], length 0
+
+23 packets captured
+23 packets received by filter
+0 packets dropped by kernel
+tcpdump: listening on enp2s0, link-type EN10MB (Ethernet), capture size 262144 bytes
+11:29:52.664344 IP (tos 0x10, ttl 64, id 2232, offset 0, flags [DF], proto TCP (6), length 60)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [S], cksum 0xd6e7 (correct), seq 411195002, win 29200, options [mss 1460,sackOK,TS val 2160572929 ecr 0,nop,wscale 7], length 0
+11:29:52.664568 IP (tos 0x10, ttl 64, id 2233, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [.], cksum 0x3359 (correct), seq 411195003, ack 2454667539, win 229, options [nop,nop,TS val 2160572930 ecr 2796734815], length 0
+11:29:53.929294 IP (tos 0x10, ttl 64, id 2234, offset 0, flags [DF], proto TCP (6), length 56)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [P.], cksum 0xb8e9 (correct), seq 0:4, ack 1, win 229, options [nop,nop,TS val 2160574194 ecr 2796734815], length 4
+11:29:54.657369 IP (tos 0x10, ttl 64, id 2235, offset 0, flags [DF], proto TCP (6), length 56)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [P.], cksum 0xb51f (correct), seq 4:8, ack 1, win 229, options [nop,nop,TS val 2160574922 ecr 2796736080], length 4
+11:29:55.040213 IP (tos 0x10, ttl 64, id 2236, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [P.], cksum 0x152d (correct), seq 8:10, ack 1, win 229, options [nop,nop,TS val 2160575305 ecr 2796736808], length 2
+11:29:55.310771 IP (tos 0x10, ttl 64, id 2237, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [P.], cksum 0x129d (correct), seq 10:12, ack 1, win 229, options [nop,nop,TS val 2160575576 ecr 2796737191], length 2
+11:29:56.247382 IP (tos 0x10, ttl 64, id 2238, offset 0, flags [DF], proto TCP (6), length 56)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [P.], cksum 0x9e77 (correct), seq 12:16, ack 1, win 229, options [nop,nop,TS val 2160576512 ecr 2796737461], length 4
+11:29:58.349390 IP (tos 0x10, ttl 64, id 2239, offset 0, flags [DF], proto TCP (6), length 57)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [P.], cksum 0x3b8d (correct), seq 16:21, ack 1, win 229, options [nop,nop,TS val 2160578614 ecr 2796738398], length 5
+11:30:01.103458 IP (tos 0x10, ttl 64, id 2240, offset 0, flags [DF], proto TCP (6), length 62)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [P.], cksum 0x8be0 (correct), seq 21:31, ack 1, win 229, options [nop,nop,TS val 2160581369 ecr 2796740500], length 10
+11:30:02.469488 IP (tos 0x10, ttl 64, id 2241, offset 0, flags [DF], proto TCP (6), length 57)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [P.], cksum 0xe5f5 (correct), seq 31:36, ack 1, win 229, options [nop,nop,TS val 2160582735 ecr 2796743254], length 5
+11:30:03.121128 IP (tos 0x10, ttl 64, id 2242, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [P.], cksum 0xd6fb (correct), seq 36:38, ack 1, win 229, options [nop,nop,TS val 2160583386 ecr 2796744620], length 2
+11:30:03.710276 IP (tos 0x10, ttl 64, id 2243, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [P.], cksum 0xd221 (correct), seq 38:40, ack 1, win 229, options [nop,nop,TS val 2160583975 ecr 2796745271], length 2
+11:30:04.322864 IP (tos 0x10, ttl 64, id 2244, offset 0, flags [DF], proto TCP (6), length 55)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [P.], cksum 0x6b68 (correct), seq 40:43, ack 1, win 229, options [nop,nop,TS val 2160584588 ecr 2796745861], length 3
+11:30:05.040736 IP (tos 0x10, ttl 64, id 2245, offset 0, flags [DF], proto TCP (6), length 57)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [P.], cksum 0xcf4b (correct), seq 43:48, ack 1, win 229, options [nop,nop,TS val 2160585306 ecr 2796746473], length 5
+11:30:06.195891 IP (tos 0x10, ttl 64, id 2246, offset 0, flags [DF], proto TCP (6), length 54)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [P.], cksum 0xc0e1 (correct), seq 48:50, ack 1, win 229, options [nop,nop,TS val 2160586461 ecr 2796747191], length 2
+11:30:06.779272 IP (tos 0x10, ttl 64, id 2247, offset 0, flags [DF], proto TCP (6), length 55)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [P.], cksum 0x5811 (correct), seq 50:53, ack 1, win 229, options [nop,nop,TS val 2160587044 ecr 2796748346], length 3
+11:30:07.796444 IP (tos 0x10, ttl 64, id 2248, offset 0, flags [DF], proto TCP (6), length 53)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [P.], cksum 0xbcdb (correct), seq 53:54, ack 1, win 229, options [nop,nop,TS val 2160588062 ecr 2796748930], length 1
+11:30:09.953038 IP (tos 0x10, ttl 64, id 2249, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [F.], cksum 0xb47d (correct), seq 54, ack 1, win 229, options [nop,nop,TS val 2160590218 ecr 2796749947], length 0
+11:30:09.953190 IP (tos 0x10, ttl 64, id 2250, offset 0, flags [DF], proto TCP (6), length 52)
+    192.168.1.219.53404 > 192.168.1.100.22: Flags [.], cksum 0xac10 (correct), seq 55, ack 2, win 229, options [nop,nop,TS val 2160590218 ecr 2796752103], length 0
+
+19 packets captured
+19 packets received by filter
+0 packets dropped by kernel
